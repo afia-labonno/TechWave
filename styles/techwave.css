@@ -534,7 +534,7 @@ hr{
         text-align: center;
     }
     .banner-decription h1{
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .banner-decription p{
         font-size: 1.10em;
@@ -559,18 +559,20 @@ hr{
     }
 
     .about-heading h2{
-        font-size: 2em;
+        font-size: 24px;
         font-weight: 600;
         margin: 0 auto;
+        margin-bottom: 20px;
 
     }
     .about-heading p{
-        font-size: 14px;
+        font-size: 12px;
         letter-spacing: 0%; 
-        line-break: anywhere;
+        /* line-break: anywhere; */
 
         padding: 0 30px;
-        margin: 4px 0;
+        margin-right: 18px;
+        margin-left: 18px;
 
     }
     .about-span{
@@ -611,7 +613,7 @@ hr{
         padding: 0 18px;
     }
     .why-container h2{
-        font-size: 1.8em;
+        font-size: 24px;
         margin-bottom: 20px;
 
     }
@@ -631,12 +633,20 @@ hr{
         border-radius: 24px;
         height: auto;
     }
+    .card img{
+        width: 20px;
+        height: 20px;
+        margin-left: 18px;
+    }
     .card h3{
-        font-size: 1.8em;
+        font-size: 1.1em;
+        margin-left: 18px;
     }
     .card p{
-        font-size: 16px;
+        font-size: 12px;
         line-height: 1.6;
+        margin-left: 18px;
+        margin-right: 18px;
     }
     .why-choose img{
         width: 40px;
@@ -691,6 +701,48 @@ hr{
     .duration img{
         height: 16px;
         width: 16px;
+    }
+
+    /* responsive host-section */
+    #host-section{
+        padding: 30px 0;
+    }
+    .host-container{
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+    .host-container h2{
+        font-size:1.8em ;
+    }
+    .host{
+        display: grid;
+        grid-template-areas: "host-image" "host-intro" "host-social";
+        grid-template-columns: 1fr;
+        gap: 20px;                   
+        padding: 24px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        margin: 0 auto
+    }
+
+    .host-intro{
+        padding: 0, 20px;
+    }
+    .host-intro h3{
+        font-size: 1.5em;
+    }
+    .host-intro p{
+        font-size: 12px;
+        line-height: 1.6;
+    }
+   .host-social {
+        grid-area: buttons;
+        display: flex;
+        justify-content: center;     
+        gap: 12px;
+        margin-top: 16px;
     }
 
 }
