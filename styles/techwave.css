@@ -40,29 +40,21 @@
     font-weight: 500;
 }
 
-/* hamburger menu */
-#hamburger-menu{
-    display: none;
-}
-.hamburger{
-    display: none;
-}
-
 /* nav button */
-.nav-btn{
+.gradient-btn{
     justify-content: center;
     align-items: center;
     gap: 2px;
     border:none;
     border-radius: 10000px;
     padding: 12px 16px;
-
     background:linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8) ;
     background-size: 300% 300%;
     animation: animated-button 5s ease infinite;   
 
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
 @keyframes animated-button{
     0% {
@@ -75,6 +67,123 @@
         background-position: 0% 50%;
     }
 }
+
+
+/* banner section syle */
+#banner{
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    background-image: url("../assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    border: 5px solid red;
+    
+    
+}
+.banner-container{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;   
+    align-items: center;   
+    margin: 0 auto;
+    text-align: center;          
+    gap: 24px;  
+
+
+    width: 100%;
+    max-width: 550px;
+  
+}
+/* banner-image */
+.banner-img{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* width: fit-content; */
+    margin: 0 auto;
+    max-width: 350px;
+    margin-top: 100px;
+}
+.circle{
+    position: relative;
+    z-index: 1;
+}
+.circle img{
+    display: block;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+}
+.microphone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.microphone img{
+    max-width: 120px;
+    height: auto;
+}
+
+/* banner-description */
+.banner-decription{
+    text-align: center;
+    color: #FFFFFF;
+}
+.banner-decription h1{
+    font-size: 3.75em;
+    font-weight: 800;  
+    margin: 0;
+}
+.banner-decription p{
+    font-size: 1em;
+    font-weight: 400;
+
+    max-width: 550px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    margin: 0;
+    
+}
+
+/* banner-btn */
+.banner-btn{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.subscribe-btn{
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    border:2px solid #00FF88;
+    border-radius: 10000px;
+    padding: 12px 16px;
+
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+
+    background: transparent;
+    cursor: pointer;
+
+}
+
+
+
+
 
 /* Responsive for mobile device */
 @media screen and (max-width:576px) {
@@ -90,7 +199,7 @@
         max-width: 150px;
         height: auto;
     }
-    .nav-btn{
+    .gradient-btn{
         max-width: 150px;
         width: 100%;
         font-size: 14px;
