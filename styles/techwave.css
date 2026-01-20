@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* Font Style */
@@ -305,7 +311,7 @@ hr{
     padding-left: 20px;
     display: flex;
     flex-direction: column;
-    /* gap: 5px;  */
+    gap: 14px; 
     justify-content: center;
    
 }
@@ -319,6 +325,7 @@ hr{
 .card p{
     font-size: 16px;
     font-weight: 400;
+    line-height: 24px;
 }
 
 
@@ -463,6 +470,44 @@ hr{
 
 
     /* responsive why-section */
+    #why-section{
+        padding: 60px 0;
+    }
+    .why-container{
+        max-width: 100%;
+        padding: 0 18px;
+    }
+    .why-container h2{
+        font-size: 1.8em;
+        margin-bottom: 20px;
 
+    }
+    .why-choose{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap:10px
+    }
+    .long-layout,
+    .wide-layout,
+    .normal-layout{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .card{
+        padding: 20px;
+        border-radius: 24px;
+        height: auto;
+    }
+    .card h3{
+        font-size: 1.8em;
+    }
+    .card p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .why-choose img{
+        width: 40px;
+        height: 40px;
+    }
 
 }
