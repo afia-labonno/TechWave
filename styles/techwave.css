@@ -389,6 +389,8 @@ hr{
   width: 350px;
   height: 220px;
   border-radius: 40px;
+
+  box-sizing: border-box;
 }
 .video-title,
 .video-description{
@@ -741,6 +743,8 @@ hr{
         border-radius: 16px;
         width: 100%;
         display: block;
+
+        box-sizing: border-box;
     }
     .video-title{
         font-size: 1.1em;
